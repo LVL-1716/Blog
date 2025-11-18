@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "slug": "introducao-ao-nextjs-15",
+    "titulo": "Introdução ao Next.js 15",
+    "autor": "Maria Silva",
+    "dataPublicacao": "2025-11-01",
+    "resumo": "Descubra as novidades do Next.js 15 e como o App Router revolucionou o desenvolvimento React.",
+    "conteudo": "O Next.js 15 trouxe mudanças significativas na forma como desenvolvemos aplicações React. Com o App Router, agora temos Server Components por padrão, tornando nossas aplicações mais rápidas e eficientes.\n\nO novo sistema de roteamento baseado em diretórios simplifica a criação de rotas dinâmicas e layouts compartilhados. Além disso, as melhorias no sistema de cache e streaming permitem experiências de usuário ainda mais fluidas.\n\nNeste artigo, exploraremos as principais funcionalidades do Next.js 15, incluindo Server Actions, melhorias no Data Fetching e as novas APIs de metadados para SEO."
+  },
+  {
+    "id": 2,
+    "slug": "guia-completo-typescript",
+    "titulo": "Guia Completo de TypeScript",
+    "autor": "João Santos",
+    "dataPublicacao": "2025-11-05",
+    "resumo": "Aprenda TypeScript do zero e melhore a qualidade do seu código JavaScript.",
+    "conteudo": "TypeScript é um superset de JavaScript que adiciona tipagem estática ao código. Isso significa menos bugs em produção e uma experiência de desenvolvimento muito mais produtiva.\n\nCom TypeScript, você pode definir interfaces, tipos customizados, generics e muito mais. O compilador detecta erros antes mesmo de você executar o código, economizando tempo e frustração.\n\nNeste guia completo, você aprenderá desde os conceitos básicos até técnicas avançadas como tipos condicionais, mapped types e utility types. Prepare-se para levar suas habilidades de desenvolvimento para o próximo nível!"
+  },
+  {
+    "id": 3,
+    "slug": "seo-em-aplicacoes-react",
+    "titulo": "SEO em Aplicações React",
+    "autor": "Ana Costa",
+    "dataPublicacao": "2025-11-10",
+    "resumo": "Estratégias e boas práticas para otimizar o SEO de aplicações React modernas.",
+    "conteudo": "SEO sempre foi um desafio em aplicações React devido à renderização no lado do cliente. No entanto, frameworks como Next.js resolveram esse problema com Server-Side Rendering (SSR) e Static Site Generation (SSG).\n\nÉ essencial configurar corretamente os metadados de cada página, incluindo título, descrição e Open Graph tags para redes sociais. Além disso, a estrutura de URLs, sitemap e robots.txt são fundamentais.\n\nNeste artigo, você aprenderá como implementar metadados dinâmicos usando a função generateMetadata do Next.js, criar URLs amigáveis com slugs e garantir que sua aplicação seja indexada corretamente pelos motores de busca."
+  },
+  {
+    "id": 4,
+    "slug": "server-components-vs-client-components",
+    "titulo": "Server Components vs Client Components",
+    "autor": "Pedro Oliveira",
+    "dataPublicacao": "2025-11-15",
+    "resumo": "Entenda as diferenças entre Server Components e Client Components no Next.js 15.",
+    "conteudo": "Uma das maiores mudanças no Next.js 15 é o uso de Server Components por padrão. Mas qual a diferença entre Server e Client Components?\n\nServer Components são renderizados no servidor, não enviam JavaScript para o cliente e têm acesso direto a recursos do backend como bancos de dados. São ideais para páginas que não precisam de interatividade.\n\nClient Components, marcados com 'use client', são necessários quando você precisa usar hooks como useState, useEffect, ou manipular eventos do usuário. Eles são hidratados no cliente e permitem interatividade completa.\n\nA chave é usar Server Components sempre que possível e adicionar Client Components apenas onde necessário. Isso resulta em aplicações mais rápidas com menos JavaScript no bundle final."
+  },
+  {
+    "id": 5,
+    "slug": "data-fetching-com-nextjs",
+    "titulo": "Data Fetching com Next.js",
+    "autor": "Carla Mendes",
+    "dataPublicacao": "2025-11-18",
+    "resumo": "Aprenda as melhores formas de buscar dados no Next.js 15 usando Server Components.",
+    "conteudo": "O Next.js 15 simplificou drasticamente o data fetching. Agora você pode usar async/await diretamente em Server Components, sem necessidade de useEffect ou bibliotecas externas.\n\nExistem três estratégias principais: Static Site Generation (SSG) para conteúdo que muda raramente, Server-Side Rendering (SSR) para dados que mudam frequentemente, e Incremental Static Regeneration (ISR) para um meio termo.\n\nVocê pode controlar o comportamento usando fetch com opções de cache, ou configurando force-static e force-dynamic. A função generateStaticParams permite pré-renderizar rotas dinâmicas em build time.\n\nNeste artigo, exploramos exemplos práticos de cada abordagem e quando usar cada uma para maximizar a performance da sua aplicação."
+  }
+]
