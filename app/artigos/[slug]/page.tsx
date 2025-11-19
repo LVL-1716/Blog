@@ -13,8 +13,9 @@ export async function generateStaticParams() {
 }
 
 // Gerar metadados dinâmicos para SEO
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const artigo = await getArtigoPorSlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const artigo = await getArtigoPorSlug(slug);
 
   if (!artigo) {
     return {
@@ -45,8 +46,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 // Página do artigo (Server Component)
-export default async function ArtigoPage({ params }: { params: { slug: string } }) {
-  const artigo = await getArtigoPorSlug(params.slug);
+export default async function ArtigoPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const artigo = await getArtigoPorSlug(slug);
 
   // Se o artigo não existir, mostrar página 404
   if (!artigo) {
